@@ -19,11 +19,7 @@ public class CalculatorFunctions {
     }
 
     public static double power(double num1, double num2) {
-        double result = num1;
-        for (int i = 1; i < num2; i++) {
-            result = result * num1;
-        }
-        return 0;
+        return Math.pow(num1, num2)
     }
 
     public static double square(double num) {
@@ -47,7 +43,6 @@ public class CalculatorFunctions {
     }
 
     public static double abs(double num) {
-        if(num < 0) return num * -1;
-        return num;
+        return Math.abs(num);
     }
 }
